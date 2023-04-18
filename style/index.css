@@ -30,6 +30,12 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+html {
+    background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/denim.png");
+    font-family: "Dongle";
+}
+
 body {
 	line-height: 1;
 }
@@ -55,9 +61,24 @@ table {
     padding: .5rem;
 }
 
+header {
+    background-color: #fcd4bb;
+}
+
 h1 {
     font-size: 8rem;
+    color: white;
 }
+
+.sub-pages h1 {
+    text-shadow: -1px -1px 0 grey, 1px -1px 0 grey, -1px 1px 0 grey, 1px 1px 0 grey;
+    text-align: center;
+}
+
+.main-photo2 {
+    display: flex;
+}
+
 
 .title {
     display: flex;
@@ -79,6 +100,9 @@ h2 {
 .navigation a {
     padding: 1rem 2rem;
     border: 2px solid black;
+    text-decoration: solid;
+    color: black;
+    background-color: white;
 }
 
 .main-photo {
@@ -86,14 +110,50 @@ h2 {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    display: flex;
     background-image: url("https://images.unsplash.com/photo-1595790217471-cc501a17e15e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1929&q=80");
-    justify-content: center;
     padding-top: 200px;
     padding-bottom: 200px;
-    margin: 3rem 30rem;
+    margin: 3rem 10%;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.main-photo2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://images.pexels.com/photos/251225/pexels-photo-251225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    padding-top: 200px;
+    padding-bottom: 400px;
+    margin: 3rem 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-photo3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://images.pexels.com/photos/376704/pexels-photo-376704.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    padding-top: 200px;
+    padding-bottom: 400px;
+    margin: 3rem 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-text {
+    display: flex;
+    flex-flow: column nowrap;
+    backdrop-filter: blur(6px);
+    justify-content: space-between;
+}
+
+.main-text p {
+    font-size: 4.5rem;
+    text-align: center;
+    margin: 2.5rem 1rem;
+    color: white;
+    text-shadow: -1px -1px 0 grey, 1px -1px 0 grey, -1px 1px 0 grey, 1px 1px 0 grey;
 }
 
 .main-photo button {
@@ -118,7 +178,7 @@ h2 {
     flex-flow: column wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 8px 20px;
+    margin: 3rem 2.5rem;
 }
 
 .box img {
@@ -130,14 +190,36 @@ h2 {
 .box p {
     font-size: 3rem;
     padding: 1rem 2rem;
+    color: white;
 }
 
 footer {
-    display: flex;
-    justify-content: center;
+    background-color: #f9d4a5;
 }
 
-footer button {
+.footer-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+#footer-button {
     font-size: 3rem;
     padding: 1rem 2rem;
+    font
+}
+
+button {
+    font-family: "Dongle";
+}
+
+button:hover {
+    color: white;
+    background-color: black;
+}
+
+.navigation a:hover {
+    background-color: black;
+    color: white;
 }
