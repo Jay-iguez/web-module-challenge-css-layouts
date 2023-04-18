@@ -156,22 +156,32 @@ h2 {
     text-shadow: -1px -1px 0 grey, 1px -1px 0 grey, -1px 1px 0 grey, 1px 1px 0 grey;
 }
 
-.main-text nav {
-    display: flex;
-    justify-content: center;
-    align-content: space-around;
+.main-text a {
+    font-size: 4.5rem;
+    text-align: center;
+    margin: 2.5rem 1rem;
+    color: white;
+    text-shadow: -1px -1px 0 grey, 1px -1px 0 grey, -1px 1px 0 grey, 1px 1px 0 grey;
 }
 
-.main-text nav div {
+.main-text nav {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    font-size: 5rem;
+    align-content: space-around;
 }
 
 #insta-style {
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png");
+    background-size: cover;
+    width: 20rem;
+    height: 20rem;
+    background-repeat: no-repeat;
+}
+
+#email-style {
+    background-image: url("https://media.emailonacid.com/wp-content/uploads/2018/04/Outlook1.jpg");
     background-size: cover;
     width: 20rem;
     height: 20rem;
