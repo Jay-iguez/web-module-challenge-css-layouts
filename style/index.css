@@ -156,6 +156,28 @@ h2 {
     text-shadow: -1px -1px 0 grey, 1px -1px 0 grey, -1px 1px 0 grey, 1px 1px 0 grey;
 }
 
+.main-text nav {
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.main-text nav div {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+}
+
+#insta-style {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png");
+    background-size: cover;
+    width: 20rem;
+    height: 20rem;
+    background-repeat: no-repeat;
+}
+
 .main-photo button {
     font-size: 3rem;
     padding: 1rem 2rem;
