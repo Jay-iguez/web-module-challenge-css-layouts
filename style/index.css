@@ -59,6 +59,7 @@ table {
     /*border: 1px solid grey;*/
     margin: 10px;
     padding: .5rem;
+    max-width: 100%;
 }
 
 header {
@@ -91,10 +92,10 @@ h2 {
 }
 
 .navigation {
-    font-size: 4rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    margin: 0 2rem;
+    font-size: 4rem;
 }
 
 .navigation a {
@@ -218,6 +219,10 @@ h2 {
     max-width: 95%;
 }
 
+.box-items2 a {
+    text-align: center;
+}
+
 .box {
     display: flex;
     flex-flow: column wrap;
@@ -281,7 +286,6 @@ footer {
 #footer-button {
     font-size: 3rem;
     padding: 1rem 2rem;
-    font
 }
 
 button {
@@ -302,3 +306,110 @@ button:hover {
     color: rgba(0, 0, 0, 0.5);
     font-size: .5rem;
 }
+
+@media screen and (max-width: 800px) {
+    .title {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    h1,
+    h2 {
+        text-align: center;
+    }
+
+    .navigation {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        margin: 2rem 0;
+        width: 75%;
+        gap: 2rem;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    .box img,
+    .box2 img {
+        object-fit: cover;
+        height: 20rem;
+        width: 20rem;
+    }
+
+    .box,
+    .box2 {
+        margin: 2rem 2rem;
+        width: 20rem;
+        text-align: center;
+    }
+
+    .main-photo,
+    .main-photo2,
+    .main-photo3,
+    .main-photo4 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin: 3rem 10%;
+    }
+
+    .main-photo button {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .title {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    h1,
+    h2 {
+        text-align: center;
+    }
+
+    .navigation {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        margin: 2rem 0;
+        width: 75%;
+        gap: 2rem;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    .box img,
+    .box2 img {
+        object-fit: cover;
+        height: 15rem;
+        width: 15rem;
+    }
+
+    .box,
+    .box2 {
+        margin: 2rem 2rem;
+        width: 15rem;
+        text-align: center;
+    }
+
+    .main-photo,
+    .main-photo2,
+    .main-photo3,
+    .main-photo4 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin: 3rem 10%;
+    }
+
+    .main-photo button {
+        font-size: 2.5rem;
+    }
+}
+
+
+
