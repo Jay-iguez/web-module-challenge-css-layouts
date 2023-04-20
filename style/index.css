@@ -286,7 +286,6 @@ footer {
 #footer-button {
     font-size: 3rem;
     padding: 1rem 2rem;
-    font
 }
 
 button {
@@ -308,7 +307,7 @@ button:hover {
     font-size: .5rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     .title {
         flex-flow: column nowrap;
         align-items: center;
@@ -330,13 +329,18 @@ button:hover {
 
     .navigation a {
         text-align: center;
-        
     }
 
     .box img {
-        height: 30rem;
-        width: 30rem;
         object-fit: cover;
+        height: 15rem;
+        width: 15rem;
+    }
+
+    .box {
+        margin: 2rem 2rem;
+        width: 15rem;
+        text-align: center;
     }
 
     .box2 img {
@@ -344,9 +348,26 @@ button:hover {
         width: 30rem;
         object-fit: cover;
     }
+
+    .main-photo {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        background-image: url("https://images.unsplash.com/photo-1595790217471-cc501a17e15e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1929&q=80");
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin: 3rem 10%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .main-photo button {
+        font-size: 2.5rem;
+    }
 }
 
-@media (width: 1200px) {
+@media (width: 800px) {
     .title {
         flex-flow: row nowrap;
         align-items: center;
