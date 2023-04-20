@@ -59,6 +59,7 @@ table {
     /*border: 1px solid grey;*/
     margin: 10px;
     padding: .5rem;
+    max-width: 100%;
 }
 
 header {
@@ -91,10 +92,10 @@ h2 {
 }
 
 .navigation {
-    font-size: 4rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    margin: 0 2rem;
+    font-size: 4rem;
 }
 
 .navigation a {
@@ -218,6 +219,10 @@ h2 {
     max-width: 95%;
 }
 
+.box-items2 a {
+    text-align: center;
+}
+
 .box {
     display: flex;
     flex-flow: column wrap;
@@ -301,4 +306,60 @@ button:hover {
 #easter-egg {
     color: rgba(0, 0, 0, 0.5);
     font-size: .5rem;
+}
+
+@media (max-width: 600px) {
+    .title {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    h1,
+    h2 {
+        text-align: center;
+    }
+
+    .navigation {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        margin: 2rem 0;
+        width: 75%;
+        gap: 2rem;
+    }
+
+    .navigation a {
+        text-align: center;
+        
+    }
+
+    .box img {
+        height: 30rem;
+        width: 30rem;
+        object-fit: cover;
+    }
+
+    .box2 img {
+        height: 30rem;
+        width: 30rem;
+        object-fit: cover;
+    }
+}
+
+@media (width: 1200px) {
+    .title {
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+
+    h1,
+    h2 {
+        text-align: center;
+    }
+
+    .box img {
+        height: 30rem;
+        width: 30rem;
+        object-fit: cover;
+    }
 }
